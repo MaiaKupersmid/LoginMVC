@@ -47,6 +47,7 @@ public class Account : Controller
         Usuario user = new Usuario (UserName, Contraseña, Nombre, Mail, Telefono);
         ViewBag.user = user;
         BD.AgregarUsuario(user);
+                //return View("PostLogin");
         return RedirectToAction("PostLogin", "Account");
     }
 }
