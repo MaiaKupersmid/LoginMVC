@@ -15,10 +15,20 @@ public class Account : Controller
     {
         return View();
     }
-
+    
     public IActionResult Login()
     {
         return View();
+    }
+    
+    public IActionResult VerificarLogin(string UserName, string Contraseña)
+    {   
+        bool okey = BD.Verificar(UserName, Contraseña);
+        if(okey){    
+            return RedirectToAction("PostLogin", "Account");
+        } else{
+            return RedirectToAction("Login", "Account");
+        }
     }
 
     public IActionResult PostLogin()
@@ -34,7 +44,9 @@ public class Account : Controller
     [HttpPost]
     public IActionResult RegistarUsuario(string UserName, string Contraseña, string Nombre, string Mail, string Telefono)
     {
-        BD.AgregarUsuario(new Usuario (UserName, Contraseña, Nombre, Mail, Telefono));
+        Usuario user = new Usuario (UserName, Contraseña, Nombre, Mail, Telefono);
+        ViewBag.user = user;
+        BD.AgregarUsuario(user);
         return RedirectToAction("PostLogin", "Account");
     }
 }

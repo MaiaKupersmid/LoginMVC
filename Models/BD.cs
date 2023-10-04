@@ -15,5 +15,21 @@ public static class BD
         }
     }
 
-    
+    public static bool Verificar(string userName, string contraseña)
+    {
+        string User = null;
+        bool ok = false;
+        string sql = "SELECT UserName FROM Usuario WHERE UserName = @userName AND Contraseña = @contraseña";
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            User = BD.QueryFirstOrDefault<string>(sql, new { userName, contraseña });
+        }
+        if(userName == User)
+        {
+            ok = true;
+        } else{
+            ok = false;
+        }
+        return ok;
+    }
 }

@@ -7,4 +7,25 @@
     <title>Post Login</title>
     <script src="/wwwroot/js/site.js"></script>
 </head>
-hhhhh
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+                <div class="mb-md-5 mt-md-4 pb-5">
+
+                    <h2 class="fw-bold mb-2 text-uppercase">Bienvenido!</h2>
+                 
+                    <div class="form-outline form-white mb-4">
+                        <h6 class="fw-bold mb-2 text-uppercase">Nombre: @ViewBag.user.Nombre</h6>
+                        <h6 class="fw-bold mb-2 text-uppercase">Usuario: @ViewBag.user.UserName</h6>
+                        <h6 class="fw-bold mb-2 text-uppercase">Email: @ViewBag.user.Mail</h6>
+                        <h6 class="fw-bold mb-2 text-uppercase">Telefono: @ViewBag.user.Telefono</h6>
+                    </div>
+
+                </div>                
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
