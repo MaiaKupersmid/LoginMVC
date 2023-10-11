@@ -15,6 +15,20 @@ public static class BD
         }
     }
 
+    public static Usuario TraerUsuario(string userName)
+    {
+        Usuario User = null;
+        string nombre = null ;
+        string mail = null ;
+        string telefono = null ;
+        string sql = "SELECT * FROM Usuario WHERE UserName = @userName ";
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            User = BD.QueryFirstOrDefault<Usuario>(sql, new { userName });
+        }
+        return User;
+    }
+
     public static bool Verificar(string userName, string contraseña)
     {
         string User = null;
@@ -31,5 +45,16 @@ public static class BD
             ok = false;
         }
         return ok;
+    }
+
+    public static string TraerPorTel(string telefono)
+    {
+        string User = null;
+        string sql = "SELECT UserName FROM Usuario WHERE Telefono = @telefono ";
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            User = BD.QueryFirstOrDefault<string>(sql, new { telefono });
+        }
+        return User;
     }
 }

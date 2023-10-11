@@ -23,16 +23,19 @@ public class Account : Controller
     
     public IActionResult VerificarLogin(string UserName, string Contraseña)
     {   
+        
         bool okey = BD.Verificar(UserName, Contraseña);
         if(okey){    
-            return RedirectToAction("PostLogin", "Account");
+            return RedirectToAction("PostLogin", "Account", new {username=UserName});
         } else{
             return RedirectToAction("Login", "Account");
         }
     }
 
-    public IActionResult PostLogin()
+    public IActionResult PostLogin(string username)
     {
+        
+        ViewBag.user =BD.TraerUsuario(username);
         return View();
     }
 
@@ -42,12 +45,17 @@ public class Account : Controller
     }
 
     [HttpPost]
+    public IActionResult PostOlvide(string tele)
+    {
+        string user = BD.TraerPorTel(tele);
+        return RedirectToAction("PostLogin", "Account", new {username=user});
+    }
+
+    [HttpPost]
     public IActionResult RegistarUsuario(string UserName, string Contraseña, string Nombre, string Mail, string Telefono)
     {
         Usuario user = new Usuario (UserName, Contraseña, Nombre, Mail, Telefono);
-        ViewBag.user = user;
         BD.AgregarUsuario(user);
-                //return View("PostLogin");
-        return RedirectToAction("PostLogin", "Account");
+        return RedirectToAction("PostLogin", "Account", new {username=UserName});
     }
 }
