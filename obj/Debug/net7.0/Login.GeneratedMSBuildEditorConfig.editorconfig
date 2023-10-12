@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Login
 build_property.RootNamespace = Login
-build_property.ProjectDir = C:\Users\47350196\Downloads\Login\
+build_property.ProjectDir = C:\Users\47350196\Desktop\Login\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\47350196\Downloads\Login
+build_property.MSBuildProjectDirectory = C:\Users\47350196\Desktop\Login
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/47350196/Downloads/Login/Views/Account/Login.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Account/Olvide.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Account/Olvide.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPbHZpZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Account/PostLogin.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Account/PostLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQb3N0TG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Account/Registro.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Account/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Home/Index.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Home/Privacy.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Shared/Error.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/_ViewImports.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/_ViewStart.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47350196/Downloads/Login/Views/Shared/_Layout.cshtml]
+[C:/Users/47350196/Desktop/Login/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ry12vzjnvz

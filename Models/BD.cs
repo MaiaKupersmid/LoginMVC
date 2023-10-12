@@ -47,13 +47,13 @@ public static class BD
         return ok;
     }
 
-    public static string TraerPorTel(string telefono)
+    public static string TraerPorTel(string userName)
     {
         string User = null;
-        string sql = "SELECT UserName FROM Usuario WHERE Telefono = @telefono ";
+        string sql = "SELECT UserName FROM Usuario WHERE UserName = @userName";
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            User = BD.QueryFirstOrDefault<string>(sql, new { telefono });
+            User = BD.QueryFirstOrDefault<string>(sql, new { userName });
         }
         return User;
     }

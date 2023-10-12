@@ -45,9 +45,9 @@ public class Account : Controller
     }
 
     [HttpPost]
-    public IActionResult PostOlvide(string tele)
+    public IActionResult PostOlvide(string UserName)
     {
-        string user = BD.TraerPorTel(tele);
+        string user = BD.TraerPorTel(UserName);
         return RedirectToAction("PostLogin", "Account", new {username=user});
     }
 
